@@ -132,7 +132,6 @@ nav a:hover{ /* passar o mouse */
 }
 
 .box p{
-    color: #666;
     font-size: 1rem;
     margin: 10px 0;
 }
@@ -142,9 +141,15 @@ nav a:hover{ /* passar o mouse */
     margin-top: 20px;
 }
 
+.box img{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+}
+
 /* separar as partes do site */
 .beneficios{
-    background-color: #f5f5f5; /* Fundo cinza claro */
+    background-color: #f5f5f5;
     padding: 50px 20px;
 }
 
@@ -168,27 +173,9 @@ nav a:hover{ /* passar o mouse */
 }
 
 .beneficio-separado p{ /* Texto  */
-    color: #666;
+    color: #000;
     line-height: 1.6;
     font-size: 1rem;
-}
-
-.contato{ 
-    background-color: #1a1a1a;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.contato h2{ /* Título principal */
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.contato p{ /* Textos  */
-    font-size: 1.2rem;
-    margin-bottom: 30px;
 }
 
 .btn-whatsapp{ /* Botão amarelo do WhatsApp */
@@ -199,13 +186,47 @@ nav a:hover{ /* passar o mouse */
     font-weight: bold;
     border-radius: 30px;
     text-decoration: none; /* tirar a linha do texto */
-    display: inline-block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.email-texto{ /* Texto do email */
-    margin-top: 30px;
-    font-size: 0.9rem;
-    opacity: 0.8;
+.btn-whatsapp:hover{ /* passar o mouse */
+    background-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.formulario{
+    background-color:#000000;
+    padding: 50px 20px;
+    align-items: center;
+}
+
+.form-total{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-sep{
+    background: #ddd;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.form-label{
+    color: #000000;
+    font-weight: bold;
+}
+
+.form-control{
+    width: 96%;
+    padding: 12px;
+    border-radius: 10px;
+    background: #222;
+    color: #fff;
+    font-size: 16px;
 }
 
 footer{ /* Rodapé final */
