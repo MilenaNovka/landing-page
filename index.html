@@ -63,19 +63,29 @@
     </div>
 
 <!-- SEÇÃO DE CONTATO -->
-<div class="contato" id="contato"> <!-- Área de contato final -->
-    <h2>Faça Seu Pedido</h2>
-    <p>Entre em contato pelo WhatsApp para fazer seu pedido</p>
-    
-    <!-- colocar o texto no final faz com que apareca quando for mandar para o whatsapp-->
-    <a href="https://wa.me/5541999999999?text=Olá! Tenho interesse nas miniaturas de F1" 
-       class="btn-whatsapp" 
-       target="_blank"> <!-- Link para WhatsApp -->
-       Chamar no WhatsApp
-    </a>
-    
-    <p class="email-texto">Ou envie email para: contato@miniaturasf1.com.br</p>
-</div>
+        <div class="formulario">
+            <h2 class="text-center fw-bold">Entre em Contato</h2>
+            <p class="text-center">Preencha o formulário abaixo para se inscrever ou tirar dúvidas.</p>
+
+            <form id="whatsappForm" class="mt-4">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Seu Nome</label>
+                    <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Seu E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Sua Mensagem</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Digite sua mensagem"></textarea>
+                </div>
+
+                <button type="submit" class="btn-whatsapp">Enviar pelo WhatsApp</button>
+            </form>
+        </div>
 
 <footer> <!-- Rodapé -->
     <h2>Todos os direitos reservados - Milena Novka</h2>
